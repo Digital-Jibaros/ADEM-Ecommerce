@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 :root {
   --color-1: #fafffe;
   --color-2: #7c9c91;
@@ -7,5 +9,136 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-2);
+}
+
+
+/* header */
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 32px;
   background-color: var(--color-1);
+  border-bottom: 0.5px solid #E6E7EB;
+}
+
+/* icon and h1 */
+
+#logo-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logo-group h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+#logo-group h1 span:first-of-type {
+  color: var(--color-4);
+}
+#logo-group h1 span:last-of-type {
+  color: var(--color-3);
+}
+
+#logo-group img {
+  width: 33px;
+  aspect-ratio: 1/1;
+} 
+
+/* navigation */
+
+#navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-sections {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-5);
+  border-right: 0.5px solid var(--color-5);
+}
+
+.nav-sections li {
+  position: relative;
+  margin: 0 20px;
+}
+.nav-sections li.active {
+  font-weight: 700;
+  color: var(--color-4);
+}
+/* .nav-sections li.active::first-letter {
+  text-decoration: underline;
+  text-decoration-color: var(--color-4);
+  text-decoration-thickness: 2px;
+} */
+.nav-sections li.active::first-letter {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 0;
+  border-bottom: 2px solid var(--color-4);
+}
+
+/* nav icons */
+
+.nav-icons {
+  padding-left: 15px;
+  display: flex;
+}
+.nav-icon {
+  position: relative;
+  margin: 0 10px;
+  width: 28px;
+  height: 28px;
+  background-size: 100%;
+  background-position: center;
+}
+
+.nav-search {
+  background-image: url(./media/images/nav/search.png);
+}
+.nav-favorites {
+  background-image: url(./media/images/nav/favorites.png);
+}
+.nav-cart {
+  background-image: url(./media/images/nav/cart.png);
+}
+.nav-user {
+  background-image: url(./media/images/nav/user.png);
+}
+
+.nav-favorites::after,
+.nav-cart::after {
+  --size: 15px;
+  position: absolute;
+  content: "0";
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  top: -3px;
+  right: -4px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--color-5);
+  z-index: 10;
 }
