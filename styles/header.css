@@ -1,12 +1,15 @@
 /* header */
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   box-sizing: border-box;
   width: 100%;
   height: 74px;
   display: flex;
   justify-content: space-between;
-  padding: 0px 32px;
+  padding: 0px 24px;
   background-color: var(--color-1);
   border-bottom: 0.5px solid #E6E7EB;
 }
@@ -22,6 +25,7 @@ header {
 #logo-group h1 {
   font-weight: 400;
   margin: 0;
+  font-size: 1.5rem;
 }
 #logo-group h1 span:first-of-type {
   color: var(--color-4);
@@ -57,22 +61,13 @@ header {
 .nav-sections li {
   position: relative;
   margin: 0 20px;
+  font-size: 1.25rem;
 }
 .nav-sections li.active {
   font-weight: 700;
   color: var(--color-4);
 }
-/* .nav-sections li.active::first-letter {
-  text-decoration: underline;
-  text-decoration-color: var(--color-4);
-  text-decoration-thickness: 2px;
-} */
 .nav-sections li.active::first-letter {
-  position: absolute;
-  content: "";
-  inset: 0;
-  width: 100%;
-  height: 0;
   border-bottom: 2px solid var(--color-4);
 }
 
