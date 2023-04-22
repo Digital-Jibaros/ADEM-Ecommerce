@@ -20,7 +20,6 @@ header {
 }
 
 #logo-group h1 {
-  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   margin: 0;
 }
@@ -49,7 +48,6 @@ header {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'Nunito Sans', sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
   color: var(--color-5);
