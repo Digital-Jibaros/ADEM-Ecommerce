@@ -20,6 +20,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
 }
 
 #logo-group h1 {
@@ -60,8 +61,10 @@ header {
 
 .nav-sections li {
   position: relative;
-  margin: 0 20px;
+  /* margin: 0 20px; */
+  padding: 0 20px;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 .nav-sections li.active {
   font-weight: 700;
@@ -84,6 +87,7 @@ header {
   height: 28px;
   background-size: 100%;
   background-position: center;
+  cursor: pointer;
 }
 
 .nav-search {

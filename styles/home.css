@@ -43,6 +43,7 @@
   background: linear-gradient(93.17deg, #1F604A 0%, #3C8B3F 204.59%);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 .home-hero-div button p {
   display: inline-block;
