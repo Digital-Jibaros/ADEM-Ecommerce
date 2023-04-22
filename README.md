@@ -32,3 +32,10 @@ I think the header is finished, here's what I got for now:
 ![](readme/image04.png)
 
 Original at top, my work at bottom. I'm missing a very subtle gradient, the vertical line has the wrong color (for subpixel reasons) and the `font-size` on the left is a little big, but that can be fixed easily.
+
+## update 3
+Today I worked with the hero section. Everything went smooth, except for the "grow" text, because the little leaves, but with a `<svg>`, with 3 `<image>` and a `<text>`, I solved the problem quite easily.
+
+The page now looks quite similar to the mockup and I'm happy with how this project is going. Here is what I got for now:
+
+![](readme/image05.png)
