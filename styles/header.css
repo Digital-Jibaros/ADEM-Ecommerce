@@ -1,22 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-
-:root {
-  --color-1: #fafffe;
-  --color-2: #7c9c91;
-  --color-3: #3c8b3f;
-  --color-4: #1f604a;
-  --color-5: #201e1f;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-2);
-}
-
-
 /* header */
 
 header {
@@ -113,16 +94,16 @@ header {
 }
 
 .nav-search {
-  background-image: url(./media/images/nav/search.png);
+  background-image: url(../media/images/nav/search.png);
 }
 .nav-favorites {
-  background-image: url(./media/images/nav/favorites.png);
+  background-image: url(../media/images/nav/favorites.png);
 }
 .nav-cart {
-  background-image: url(./media/images/nav/cart.png);
+  background-image: url(../media/images/nav/cart.png);
 }
 .nav-user {
-  background-image: url(./media/images/nav/user.png);
+  background-image: url(../media/images/nav/user.png);
 }
 
 .nav-favorites::after,
