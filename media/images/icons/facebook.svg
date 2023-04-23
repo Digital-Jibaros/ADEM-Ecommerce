@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="30"
+   height="30"
+   viewBox="0 0 30 30"
+   fill="none"
+   version="1.1"
+   id="svg135"
+   sodipodi:docname="instagram.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs139" />
+  <sodipodi:namedview
+     id="namedview137"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="7.8666667"
+     inkscape:cx="20.783898"
+     inkscape:cy="31.144068"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg135" />
+  <circle
+     cx="15"
+     cy="15"
+     r="14.5"
+     stroke="#201E1F"
+     id="circle133" />
+  <path
+     d="m 18.946097,10.365614 h -2.25469 c -0.26719,0 -0.56406,0.35157 -0.56406,0.81875 v 1.62813 h 2.82031 l -0.42656,2.32188 h -2.39375 v 6.97032 h -2.660939 v -6.97032 h -2.414065 v -2.32188 h 2.414065 v -1.365631 c 0,-1.9593695 1.35937,-3.5515565 3.225,-3.5515565 h 2.25469 z"
+     fill="#201e1f"
+     id="path2" />
+</svg>

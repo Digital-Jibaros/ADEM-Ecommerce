@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="30"
+   height="30"
+   viewBox="0 0 30 30"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="instagram.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="7.8666667"
+     inkscape:cx="1.3347458"
+     inkscape:cy="15"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <circle
+     cx="15"
+     cy="15"
+     r="14.5"
+     stroke="#201E1F"
+     id="circle2" />
+  <path
+     d="m 22.210354,11.306906 c 0.01,0.15737 0.01,0.32143 0.01,0.48214 0,4.91518 -3.743299,10.57704 -10.58366,10.57704 -2.1093695,0 -4.0647295,-0.6128 -5.7120485,-1.6674 0.301339,0.0334 0.589289,0.0468 0.897319,0.0468 1.74107,0 3.3415195,-0.5893 4.6171895,-1.587 -1.6339295,-0.0335 -3.0066995,-1.1049 -3.4754495,-2.57814 0.57255,0.0837 1.08817,0.0837 1.67746,-0.06697 -0.84132,-0.17092 -1.59752,-0.62785 -2.14013,-1.29314 -0.5426,-0.66528 -0.83815,-1.49791 -0.83643,-2.35641 v -0.04688 c 0.49218,0.2779 1.07143,0.44866 1.67745,0.4721 -0.50945,-0.33953 -0.92726,-0.79952 -1.21637,-1.33918 -0.2891,-0.53967 -0.44058,-1.14234 -0.44099,-1.75457 0,-0.69308 0.1808,-1.32589 0.50558,-1.875 0.93382,1.14957 2.09909,2.08976 3.4200795,2.75948 1.32098,0.66973 2.76811,1.05398 4.24733,1.1278 -0.52567,-2.5279 1.36267,-4.573662 3.63277,-4.573662 1.0715,0 2.0358,0.448662 2.7154,1.171872 0.8404,-0.15736 1.644,-0.4721 2.3605,-0.893971 -0.2779,0.860491 -0.8605,1.587051 -1.6339,2.045761 0.75,-0.08036 1.4732,-0.28795 2.1429,-0.57924 -0.5056,0.7433 -1.1384,1.4029 -1.865,1.92857 z"
+     fill="#201e1f"
+     id="path133" />
+</svg>
