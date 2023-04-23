@@ -1,0 +1,25 @@
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--color-1);
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 32px;
+}
+
+footer > p {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+
+footer > div {
+  display: flex;
+  gap: 16px;
+}
+
+footer > div img {
+  cursor: pointer;
+}
