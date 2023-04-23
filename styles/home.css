@@ -112,8 +112,8 @@
   padding-right: 0;
 }
 .home-about-image-div img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   border: 46px solid #FEFFFF;
   border-right: none;
 }
