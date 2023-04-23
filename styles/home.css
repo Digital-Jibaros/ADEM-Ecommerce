@@ -1,3 +1,5 @@
+/* hero section */
+
 .home-hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -57,4 +59,61 @@
   display: inline-block;
   Width: 15.58px;
   Height: 15.15px;
+}
+
+/* about section */
+
+.home-about {
+  height: 613px;
+  background-color: var(--color-1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "about image";
+}
+
+.home-about-div {
+  grid-area: about;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-about-div img {
+  width: 118px;
+  height: 38px;
+}
+
+.home-about-div h2 {
+  color: var(--color-4);
+  font-weight: 800;
+  font-size: 40px;
+  margin: 1rem;
+}
+
+.home-about-div p {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  width: 516px;
+  margin: 1rem;
+}
+
+.home-about-image-div {
+  grid-area: image;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-2);
+  overflow: hidden;
+  padding: 68px;
+  padding-right: 0;
+}
+.home-about-image-div img {
+  width: 100%;
+  height: auto;
+  border: 46px solid #FEFFFF;
+  border-right: none;
 }
