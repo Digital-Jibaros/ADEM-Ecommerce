@@ -91,16 +91,16 @@ header {
 }
 
 .nav-search {
-  background-image: url(../media/images/nav/search.png);
+  background-image: url(../media/images/icons/search.png);
 }
 .nav-favorites {
-  background-image: url(../media/images/nav/favorites.png);
+  background-image: url(../media/images/icons/favorites.png);
 }
 .nav-cart {
-  background-image: url(../media/images/nav/cart.png);
+  background-image: url(../media/images/icons/cart.png);
 }
 .nav-user {
-  background-image: url(../media/images/nav/user.png);
+  background-image: url(../media/images/icons/user.png);
 }
 
 .nav-favorites::after,

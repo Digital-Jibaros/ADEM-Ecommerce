@@ -21,7 +21,7 @@ function logo() {
   span1.textContent = 'Leafy';
   span2.textContent = 'Living';
 
-  logo.setAttribute('src', './media/images/plant-logo.png');
+  logo.setAttribute('src', './media/images/icons/plant-logo.png');
   
   h1.append(span1, span2);
   logoGroup.append(logo, h1);
