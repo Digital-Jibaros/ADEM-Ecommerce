@@ -55,9 +55,26 @@ function hero() {
 
 function about() {
   const about = document.createElement('section');
+  const aboutDiv = document.createElement('div');
+  const icons = document.createElement('img');
+  const h2 = document.createElement('h2');
+  const p = document.createElement('p');
+  const imageDiv = document.createElement('div');
+  const image = document.createElement('img');
+
+  icons.setAttribute('src', './media/images/home/leaf-and-heart.png');
+  h2.textContent = 'Find Your Perfect Plant';
+  p.innerText = 'We handpick every plant in our shop, ensuring that they are healthy and of the highest quality.'
+  image.setAttribute('src', './media/images/home/home-about.png');
 
   about.classList.add('home-about');
+  aboutDiv.classList.add('home-about-div');
+  imageDiv.classList.add('home-about-image-div');
 
+  aboutDiv.append(icons, h2, p);
+
+  imageDiv.append(image);
+  about.append(aboutDiv, imageDiv);
   return about;
 }
 
