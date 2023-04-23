@@ -81,6 +81,37 @@ function about() {
 function categories() {
   const categories = document.createElement('section');
 
+  const cardsData = [
+    {
+      title: 'Cacti',
+      src: './media/images/home/card-category-cacti.png',
+    },
+    {
+      title: 'Plants',
+      src: './media/images/home/card-category-plants.png',
+    },
+    {
+      title: 'Succulents',
+      src: './media/images/home/card-category-succulents.png',
+    }
+  ];
+
+  for (let i = 0; i < cardsData.length; i += 1) {
+    const card = document.createElement('div');
+    const h2 = document.createElement('h2');
+    const line = document.createElement('hr');
+    const button = document.createElement('button');
+    const image = document.createElement('img');
+
+    h2.textContent = cardsData[i].title;
+    button.textContent = 'Shop Collection';
+    image.setAttribute('src', cardsData[i].src);
+
+    card.classList.add('category-card');
+    card.append(h2, line, button, image);
+    categories.append(card);
+  };
+
   categories.classList.add('home-categories');
 
   return categories;
