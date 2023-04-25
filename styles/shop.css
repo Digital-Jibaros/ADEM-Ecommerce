@@ -1,11 +1,50 @@
+/* categories section */
+
 .shop-categories {
   height: 70px;
   background-color: var(--color-1);
 }
 
+.shop-categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.shop-categories li {
+  font-weight: 300;
+  text-align: center;
+  color: #201E1F;
+  padding: 24px 12px;
+  cursor: pointer;
+}
+.shop-categories li.active {
+  font-weight: 600;
+  color: var(--color-4);
+}
+
+/* banner section */
+
 .shop-banner {
   height: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(31, 96, 74, 0.82), rgba(31, 96, 74, 0.82)), url(../media/images/shop/shop-banner.jpg), #D9D9D9;
+  background-size: cover;
+  background-position: 50% 60%;
 }
+
+.shop-banner h1 {
+  margin: 0;
+  color: var(--color-1);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* catalog section */
 
 .shop-catalog {
   padding: 40px 32px 50px;
