@@ -1,0 +1,13 @@
+.shop-categories {
+  height: 70px;
+  background-color: var(--color-1);
+}
+
+.shop-banner {
+  height: 156px;
+}
+
+.shop-catalog {
+  padding: 40px 32px 50px;
+  background-color: var(--color-1);
+}
