@@ -179,17 +179,17 @@
 
 .shop-card-buy {
   height: var(--btn-div-height);
-  color: var(--color-4);
+  color: var(--color-1);
   font-family: 'Nunito Sans';
   font-weight: 400;
   font-size: 1.25rem;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-.shop-card[data-amount="0"] .shop-card-buy{
   background-color: var(--color-4);
-  color: var(--color-1);
+  border: none;
+}
+.shop-card[data-amount="0"] .shop-card-buy {
+  background-color: transparent;
+  color: var(--color-4);
+  cursor: pointer;
 }
 
 .shop-card-add,
