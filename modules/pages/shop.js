@@ -1,4 +1,5 @@
 import { articles } from "../../articles.js";
+import { addToCart } from "../functions.js";
 
 const shopCategories = ['All Collections', 'Cacti', 'Plants', 'Succulents'];
 
@@ -116,8 +117,15 @@ function shopCard(id, imgUrl, category, name, price, amount = 0){
   favCheckbox.classList.add('shop-card-fav');
   btnDiv.classList.add('shop-card-button-div');
   btn.classList.add('shop-card-buy');
+  btn.dataset.quantity = '1';
   btnAdd.classList.add('shop-card-add');
+  btnAdd.dataset.quantity = '1';
   btnRemove.classList.add('shop-card-remove');
+  btnRemove.dataset.quantity = '-1';
+
+  [btn, btnAdd, btnRemove].forEach((button) => {
+    button.addEventListener('click', addToCart);
+  });
 
   btnDiv.append(btn, btnRemove, btnAdd);
   img.append(imgHover);
