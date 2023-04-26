@@ -13,10 +13,10 @@ export function addToCart() {
   cartCount.textContent = parseInt(cartCount.textContent) + addSubstract;
 
   if (cartCount.textContent === '0') {
-    cart.style.backgroundImage = 'url(../media/images/icons/cart.png)';
+    cart.style.backgroundImage = 'url(./media/images/icons/cart.png)';
     cartCount.style.backgroundColor = '#201E1F';
   } else {
-    cart.style.backgroundImage = 'url(../media/images/icons/cart-active.png)';
+    cart.style.backgroundImage = 'url(./media/images/icons/cart-active.png)';
     cartCount.style.backgroundColor = '#1F604A';
   };
   if (newAmount === 0) {
