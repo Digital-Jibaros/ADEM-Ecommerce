@@ -41,7 +41,9 @@ function nav() {
   const icons = document.createElement('div');
   const search = document.createElement('div');
   const favorites = document.createElement('div');
+  const favoritesCount = document.createElement('p');
   const cart = document.createElement('div');
+  const cartCount = document.createElement('p');
   const user = document.createElement('div');
 
   icons.classList.add('nav-icons');
@@ -54,11 +56,17 @@ function nav() {
 
   search.classList.add('nav-icon', 'nav-search');
   favorites.classList.add('nav-icon', 'nav-favorites');
+  favoritesCount.classList.add('nav-favorites-count');
+  favoritesCount.textContent = 0;
   cart.classList.add('nav-icon', 'nav-cart');
+  cartCount.classList.add('nav-cart-count');
+  cartCount.textContent = 0;
   user.classList.add('nav-icon', 'nav-user');
   
   menu.setAttribute('id', 'navigation');
   
+  favorites.append(favoritesCount);
+  cart.append(cartCount);
   sections.append(home, about, shop);
   icons.append(search, favorites, cart, user);
   

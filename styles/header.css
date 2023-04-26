@@ -103,20 +103,20 @@ header {
   background-image: url(../media/images/icons/user.png);
 }
 
-.nav-favorites::after,
-.nav-cart::after {
-  --size: 15px;
+.nav-favorites-count,
+.nav-cart-count {
+  --size: 16px;
   position: absolute;
-  content: "0";
+  top: -3px;
+  right: -4px;
+  margin: 0;
   color: white;
   text-align: center;
   vertical-align: middle;
   font-size: 13px;
-  top: -3px;
-  right: -4px;
-  width: var(--size);
+  min-width: var(--size);
   height: var(--size);
-  border-radius: 50%;
+  border-radius: var(--size);
   background-color: var(--color-5);
   z-index: 10;
 }
