@@ -58,6 +58,7 @@ function catalog() {
   
   articles.forEach((item) => {
     const newCard = shopCard(
+      item.id,
       item.img,
       item.category,
       item.name,
@@ -79,7 +80,7 @@ function catalog() {
   return section;
 }
 
-function shopCard(imgUrl, category, name, price, amount = 0){
+function shopCard(id, imgUrl, category, name, price, amount = 0){
   const card = document.createElement('div');
   const img = document.createElement('div');
   const imgHover = document.createElement('div');
@@ -98,14 +99,15 @@ function shopCard(imgUrl, category, name, price, amount = 0){
   namePara.textContent = name;
   pricePara.textContent = `$${parseFloat(price).toFixed(2)}`;
   favCheckbox.setAttribute('type', 'checkbox');
-  btn.textContent = 'Add to Cart';
+  btn.textContent = amount === 0 ? 'Add to Cart'
+    : `${amount} Item${amount > 1 ? 's' : ''} added`;
   btnRemove.textContent = '-';
   btnAdd.textContent = '+';
-
 
   card.classList.add('shop-card');
   card.dataset.amount = amount;
   card.dataset.favorite = false;
+  card.dataset.itemId = id;
   img.classList.add('shop-card-image');
   imgHover.classList.add('shop-card-image-hover');
   categoryPara.classList.add('shop-card-category');
