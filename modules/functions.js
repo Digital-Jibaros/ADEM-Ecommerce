@@ -27,3 +27,19 @@ export function addToCart() {
     thisCardMainBtn.setAttribute('disabled', true);
   }
 }
+
+export function toggleFavorite() {
+  const favIcon = document.querySelector('.nav-favorites');
+  const favCount = document.querySelector('.nav-favorites-count');
+  const addSubstract = this.checked ? 1 : -1;
+  
+  favCount.textContent = parseInt(favCount.textContent) + addSubstract;
+
+  if (parseInt(favCount.textContent) === 0) {
+    favCount.style.backgroundColor = '#201E1F';
+    favIcon.style.backgroundImage = 'url(./media/images/icons/favorites.png)';
+  } else {
+    favCount.style.backgroundColor = '#1F604A';
+    favIcon.style.backgroundImage = 'url(./media/images/icons/favorites-active.png)';
+  };
+}

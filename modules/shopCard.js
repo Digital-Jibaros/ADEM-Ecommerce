@@ -1,4 +1,4 @@
-import { addToCart } from "./functions.js";
+import { addToCart, toggleFavorite } from "./functions.js";
 
 export default function shopCard(id, imgUrl, category, name, price, amount = 0){
   const card = document.createElement('div');
@@ -45,6 +45,7 @@ export default function shopCard(id, imgUrl, category, name, price, amount = 0){
   [btn, btnAdd, btnRemove].forEach((button) => {
     button.addEventListener('click', addToCart);
   });
+  favCheckbox.addEventListener('click', toggleFavorite);
 
   btnDiv.append(btn, btnRemove, btnAdd);
   img.append(imgHover);
