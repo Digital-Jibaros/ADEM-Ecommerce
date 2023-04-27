@@ -64,6 +64,12 @@ function nav() {
   user.classList.add('nav-icon', 'nav-user');
   
   menu.setAttribute('id', 'navigation');
+
+  [favoritesCount, cartCount].forEach((counter) => {
+    counter.addEventListener('animationend', () => {
+      counter.classList.remove('counter-animate');
+    });
+  });
   
   favorites.append(favoritesCount);
   cart.append(cartCount);

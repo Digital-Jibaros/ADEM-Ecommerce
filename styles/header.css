@@ -133,3 +133,14 @@ header {
 .nav-favorites.has-content .nav-favorites-count {
   background-color: var(--color-4);
 }
+
+.counter-animate {
+  animation: counter-pulse 250ms linear;
+}
+
+@keyframes counter-pulse {
+  0%, 100% { scale: 100%; }
+  30% { scale: 110% }
+  0% { outline: 0px solid var(--color-2) }
+  100% { outline: 10px solid transparent }
+}

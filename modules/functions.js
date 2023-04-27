@@ -12,6 +12,7 @@ export function addToCart() {
   thisCard.dataset.amount = newAmount;
   cartCount.textContent = parseInt(cartCount.textContent) + addSubstract;
 
+  cartCount.classList.add('counter-animate');
   if (cartCount.textContent === '0') {
     cart.classList.remove('has-content');
   } else {
@@ -33,6 +34,7 @@ export function toggleFavorite() {
   
   favCount.textContent = parseInt(favCount.textContent) + addSubstract;
 
+  favCount.classList.add('counter-animate');
   if (parseInt(favCount.textContent) === 0) {
     favIcon.classList.remove('has-content');
   } else {
