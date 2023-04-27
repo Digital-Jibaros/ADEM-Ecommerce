@@ -3,7 +3,7 @@ import shopCard from "../shopCard.js";
 
 const shopCategories = ['All Collections', 'Cacti', 'Plants', 'Succulents'];
 
-export default function home() {
+export default function shop() {
   const shop = [categories(), banner(), catalog()];
   
   return shop;

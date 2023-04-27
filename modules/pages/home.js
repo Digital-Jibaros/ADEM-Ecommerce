@@ -1,3 +1,5 @@
+import { goToPage } from "../functions.js";
+
 const svgNs = 'http://www.w3.org/2000/svg';
 
 export default function home() {
@@ -44,6 +46,8 @@ function hero() {
 
   hero.classList.add('home-hero');
   div.classList.add('home-hero-div');
+
+  btn.addEventListener('click', () => goToPage('shop'));
 
   svg.append(svgImg1, svgImg2, svgImg3, svgText);
   btn.append(btnPara, btnArrow);
@@ -106,6 +110,8 @@ function categories() {
     h2.textContent = cardsData[i].title;
     button.textContent = 'Shop Collection';
     image.setAttribute('src', cardsData[i].src);
+
+    button.addEventListener('click', () => goToPage('shop'));
 
     card.classList.add('category-card');
     card.append(h2, line, button, image);

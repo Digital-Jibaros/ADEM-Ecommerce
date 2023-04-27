@@ -1,3 +1,5 @@
+import { goToPage } from "./functions.js";
+
 const svgNs = 'http://www.w3.org/2000/svg';
 
 export default function header() {
@@ -22,6 +24,8 @@ function logo() {
   span2.textContent = 'Living';
 
   logo.setAttribute('src', './media/images/icons/plant-logo.png');
+
+  logoGroup.addEventListener('click', () => goToPage('home'));
   
   h1.append(span1, span2);
   logoGroup.append(logo, h1);
@@ -47,9 +51,9 @@ function nav() {
   const user = document.createElement('div');
 
   icons.classList.add('nav-icons');
-  home.classList.add('nav-home', 'active');
-  about.classList.add('nav-about');
-  shop.classList.add('nav-shop');
+  home.classList.add('nav-item', 'nav-home');
+  about.classList.add('nav-item', 'nav-about');
+  shop.classList.add('nav-item', 'nav-shop');
   home.textContent = 'Home';
   about.textContent = 'About us';
   shop.textContent = 'Shop';
@@ -70,6 +74,8 @@ function nav() {
       counter.classList.remove('counter-animate');
     });
   });
+  home.addEventListener('click', () => goToPage("home"));
+  shop.addEventListener('click', () => goToPage("shop"));
   
   favorites.append(favoritesCount);
   cart.append(cartCount);
