@@ -13,11 +13,9 @@ export function addToCart() {
   cartCount.textContent = parseInt(cartCount.textContent) + addSubstract;
 
   if (cartCount.textContent === '0') {
-    cart.style.backgroundImage = 'url(./media/images/icons/cart.png)';
-    cartCount.style.backgroundColor = '#201E1F';
+    cart.classList.remove('has-content');
   } else {
-    cart.style.backgroundImage = 'url(./media/images/icons/cart-active.png)';
-    cartCount.style.backgroundColor = '#1F604A';
+    cart.classList.add('has-content');
   };
   if (newAmount === 0) {
     thisCardMainBtn.textContent = 'Add to Cart';
@@ -36,10 +34,8 @@ export function toggleFavorite() {
   favCount.textContent = parseInt(favCount.textContent) + addSubstract;
 
   if (parseInt(favCount.textContent) === 0) {
-    favCount.style.backgroundColor = '#201E1F';
-    favIcon.style.backgroundImage = 'url(./media/images/icons/favorites.png)';
+    favIcon.classList.remove('has-content');
   } else {
-    favCount.style.backgroundColor = '#1F604A';
-    favIcon.style.backgroundImage = 'url(./media/images/icons/favorites-active.png)';
+    favIcon.classList.add('has-content');
   };
 }

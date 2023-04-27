@@ -105,18 +105,31 @@ header {
 
 .nav-favorites-count,
 .nav-cart-count {
+  box-sizing: border-box;
   --size: 16px;
   position: absolute;
   top: -3px;
   right: -4px;
   margin: 0;
+  min-width: var(--size);
+  height: var(--size);
+  padding: 0 2px;
   color: white;
   text-align: center;
   vertical-align: middle;
+  line-height: var(--size);
   font-size: 13px;
-  min-width: var(--size);
-  height: var(--size);
   border-radius: var(--size);
   background-color: var(--color-5);
-  z-index: 10;
+}
+
+.nav-cart.has-content {
+  background-image: url(../media/images/icons/cart-active.png);
+}
+.nav-favorites.has-content {
+  background-image: url(../media/images/icons/favorites-active.png);
+}
+.nav-cart.has-content .nav-cart-count,
+.nav-favorites.has-content .nav-favorites-count {
+  background-color: var(--color-4);
 }
