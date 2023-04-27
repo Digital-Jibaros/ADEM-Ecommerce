@@ -39,3 +39,28 @@ Today I worked with the hero section. Everything went smooth, except for the "gr
 The page now looks quite similar to the mockup and I'm happy with how this project is going. Here is what I got for now:
 
 ![](readme/image05.png)
+
+## update 4
+The footer has been added:
+
+![](readme/image06.png)
+
+Then I've been working with the shop part:
+
+![](readme/image07.png)
+
+I did my best copying every single element from the mockup, so it's almost pixel perfect. I paid attention to all fonts, font weights, colors, borders, distance on pixels between elements, etc.
+
+The part that took me more time was making the cards:
+
+![](readme/image08.gif)
+
+I added a few animations on it, I'm not sure if I should leave it or not. For the button I used advanced `CSS` selectors and some metadata, so the "-" and "+" buttons shows only when there's at least one of the current article in the cart, the same did for the colors on the main button, which gets disabled while the other buttons are present. With `Js` I changed the `textContent` of the button to show how much items from the article are in the cart.
+
+The mockup is almost finished. Now I need to work in a few things:
+- event listeners
+- favorites count
+- store the cart in localStorage
+- make it responsive
+
+About the responsiveness, I still have to contact the designer who made the page, so he can tell me how it should look on mobile. If I can't I'll just try to make it myself.
