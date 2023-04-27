@@ -1,3 +1,6 @@
+import home from "./pages/home.js";
+import shop from "./pages/shop.js";
+
 export function addToCart() {
   const thisCard = this.closest('.shop-card');
   const thisCardMainBtn = thisCard.querySelector('.shop-card-buy');
@@ -40,4 +43,22 @@ export function toggleFavorite() {
   } else {
     favIcon.classList.add('has-content');
   };
+}
+
+export function goToPage(page) {
+  const main = document.querySelector('main');
+  const previousNavActive = document.querySelector('#navigation .active');
+  const headerNav = document.querySelector(`.nav-${page}`);
+  let sections;
+
+  previousNavActive?.classList?.remove('active');
+  headerNav.classList.add('active');
+  if (page === 'home') {
+    sections = home();
+  } else if (page === 'shop') {
+    sections = shop();
+  };
+
+  main.replaceChildren(...sections);
+  window.scrollTo(0, 0);
 }
