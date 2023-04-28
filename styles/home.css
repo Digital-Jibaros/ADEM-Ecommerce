@@ -108,12 +108,12 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: var(--color-2);
   overflow: hidden;
-  padding: 68px;
-  padding-right: 0;
+  border: 68px solid var(--color-2);
+  border-right: none;
 }
 .home-about-image-div img {
+  box-sizing: border-box;
   width: auto;
   height: 100%;
   border: 46px solid #FEFFFF;
