@@ -4,8 +4,13 @@ const svgNs = 'http://www.w3.org/2000/svg';
 
 export default function header() {
   const header = document.createElement('header');
+  const menuBtn = document.createElement('div');
+  
+  menuBtn.setAttribute('id', 'menu-button');
+  
   header.append(
     logo(),
+    menuBtn,
     nav(),
   );
   
