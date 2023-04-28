@@ -13,7 +13,15 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: var(--color-2);
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: center;
+}
+
+#wrapper {
+  width: 100vw;
+  max-width: 1440px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .25);
 }
 
 main {
