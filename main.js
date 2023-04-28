@@ -3,12 +3,16 @@ import footer from "./modules/footer.js";
 import { goToPage } from "./modules/functions.js";
 
 const body = document.querySelector('body');
+const wrapper = document.createElement('div');
 const main = document.createElement('main');
 
-body.append(
+wrapper.setAttribute('id', 'wrapper');
+
+wrapper.append(
   header(),
   main,
   footer(),
-  );
-  
-  goToPage("home");
+);
+body.append(wrapper);
+
+goToPage("home");
