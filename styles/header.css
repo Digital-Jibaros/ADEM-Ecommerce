@@ -9,6 +9,7 @@ header {
   height: 74px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0px 24px;
   background-color: var(--color-1);
   border-bottom: 0.5px solid #E6E7EB;
@@ -45,10 +46,18 @@ header {
 #navigation {
   display: flex;
   align-items: center;
-  height: 100%;
+}
+
+#menu-button {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  display: none;
+  cursor: pointer;
 }
 
 .nav-sections {
+  --separator: 0.5px solid var(--color-5);
   display: flex;
   margin: 0;
   padding: 0;
@@ -56,7 +65,7 @@ header {
   font-size: 1.25rem;
   font-weight: 300;
   color: var(--color-5);
-  border-right: 0.5px solid var(--color-5);
+  border-right: var(--separator);
 }
 
 .nav-sections li {
@@ -143,4 +152,64 @@ header {
   30% { scale: 110% }
   0% { outline: 0px solid var(--color-2) }
   100% { outline: 10px solid transparent }
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 800px) {
+  #navigation {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-1);
+    flex-direction: column;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  .nav-sections {
+    flex-direction: column;
+    border-right: none;
+    border-bottom: var(--separator);
+  }
+
+  .nav-sections li {
+    margin: 0;
+  }
+
+  .nav-icons {
+    padding-left: 20px;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    width: 100%;
+  }
+
+  .nav-icon {
+    background-image: none;
+  }
+  .nav-icon::after {
+    position: absolute;
+    /* left: 100%; */
+    font-size: 1.25rem;
+  }
+  .nav-search::after {
+    content: "Search";
+  }
+  .nav-favorites::after {
+    content: "Favorites";
+  }
+  .nav-cart::after {
+    content: "Cart";
+  }
+  .nav-user::after {
+    content: "User";
+  }
+  .nav-favorites-count,
+  .nav-cart-count {
+    /* display: inline-block; */
+    /* right: 0; */
+    display: none;
+  }
 }
