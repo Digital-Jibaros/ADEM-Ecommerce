@@ -4,18 +4,13 @@ const svgNs = 'http://www.w3.org/2000/svg';
 
 export default function header() {
   const header = document.createElement('header');
-  const menuBtn = document.createElement('div');
-  
-  menuBtn.setAttribute('id', 'menu-button');
   
   header.append(
     logo(),
-    menuBtn,
+    menuBtn(),
     nav(),
   );
 
-  menuBtn.addEventListener('click', toggleNav);
-  
   return header;
 }
   
@@ -91,4 +86,66 @@ function nav() {
   
   menu.append(sections, icons);
   return menu;
+}
+
+function menuBtn() {
+  const menuBtn = document.createElementNS(svgNs, 'svg');
+  const lineColor = '#1f604a';
+  const lineWidth = 4;
+  const lineLeft = 5;
+  const lineRight = 35;
+  const lineCap = 'round';
+  const lineAttributes = [
+    {
+      x1: lineLeft,
+      y1: 12,
+      x2: lineRight,
+      y2: 12,
+      stroke: lineColor,
+      'stroke-width': lineWidth,
+      'stroke-linecap': lineCap,
+    },
+    {
+      x1: lineLeft,
+      y1: 20,
+      x2: lineRight,
+      y2: 20,
+      stroke: lineColor,
+      'stroke-width': lineWidth,
+      'stroke-linecap': lineCap,
+    },
+    {
+      x1: lineLeft,
+      y1: 28,
+      x2: lineRight,
+      y2: 28,
+      stroke: lineColor,
+      'stroke-width': lineWidth,
+      'stroke-linecap': lineCap,
+    },
+  ];
+
+  for (let i = 0; i < lineAttributes.length; i += 1) {
+    const line = document.createElementNS(svgNs, 'line');
+    const attributes = [];
+
+    for (const attr in lineAttributes[i]) attributes.push(attr);
+
+    attributes.forEach(attr => {
+      const value = lineAttributes[i][attr];
+      line.setAttribute(attr, value);
+    });
+
+    line.classList.add(`menu-button-line-${i}`);
+
+    menuBtn.append(line);
+  }
+  
+  menuBtn.setAttribute('id', 'menu-button');
+  menuBtn.setAttribute('width', 40);
+  menuBtn.setAttribute('height', 40);
+
+  menuBtn.addEventListener('click', toggleNav);
+
+  return menuBtn;
 }
