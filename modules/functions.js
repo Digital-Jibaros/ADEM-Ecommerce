@@ -62,3 +62,8 @@ export function goToPage(page) {
   main.replaceChildren(...sections);
   window.scrollTo(0, 0);
 }
+
+export function toggleNav() {
+  const nav = document.querySelector('#navigation');
+  nav.classList.toggle('nav-show');
+}

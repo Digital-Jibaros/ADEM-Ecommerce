@@ -1,4 +1,4 @@
-import { goToPage } from "./functions.js";
+import { goToPage, toggleNav } from "./functions.js";
 
 const svgNs = 'http://www.w3.org/2000/svg';
 
@@ -13,6 +13,8 @@ export default function header() {
     menuBtn,
     nav(),
   );
+
+  menuBtn.addEventListener('click', toggleNav);
   
   return header;
 }
