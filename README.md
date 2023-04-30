@@ -64,3 +64,24 @@ The mockup is almost finished. Now I need to work in a few things:
 - make it responsive
 
 About the responsiveness, I still have to contact the designer who made the page, so he can tell me how it should look on mobile. If I can't I'll just try to make it myself.
+
+## update 5
+I got carried away and forgot to update my progress. Since my last entry I:
+- moved a few things to their own modules and CSS files
+- added a listener to favorites, so the counter now works
+- added some animations to the fav/cart counters
+- made interactive elements for navigation actually change the page (just replaces the `<main>` content and scroll to top, it's a single page project)
+- limited the width of the page for a better look on widescreens
+- added responsiveness to the header
+- made the `<nav>` a dropdown when viewport width is less than `800px`
+- used a `<svg>` element for the burger button so it can mutate to an "X" when the menu is open
+- centered the hero image so it moves away from the element at the right
+- made the home responsive (it's layout changes a little, items at the right will be centered, and decorative images will now be a background).
+
+Here's a GIF showing the page at 480x800 pixels of resolution:
+
+![](readme/image09.gif)
+
+I don't have any references for the `:hover`, so I'll skip this for now.
+
+I think the mockup is finished. I want to use `localStorage` to simulate a shopping cart, to keep the counters updated when going back to the shop section.
