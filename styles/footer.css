@@ -23,3 +23,13 @@ footer > div {
 footer > div img {
   cursor: pointer;
 }
+
+/* responsiveness */
+
+@media only screen and (max-width: 800px) {
+  footer {
+    --padding: 10px;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+  }
+}
