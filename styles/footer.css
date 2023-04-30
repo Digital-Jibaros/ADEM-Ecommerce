@@ -7,6 +7,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 26px 32px;
+  border-top: 1px solid #E6E7EB;
 }
 
 footer > p {
