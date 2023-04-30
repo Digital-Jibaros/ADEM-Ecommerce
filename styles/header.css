@@ -56,9 +56,7 @@ header {
   stroke-linecap: round;
 }
 
-.menu-button-line-0,
-.menu-button-line-1,
-.menu-button-line-2 {
+.menu-button-line {
   transition: d 150ms ease-in-out;
 }
 

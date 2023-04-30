@@ -100,7 +100,7 @@ function menuBtn() {
     const line = document.createElementNS(svgNs, 'path');
 
     line.setAttribute('d', lineDraw[i]);
-    line.classList.add(`menu-button-line-${i}`);
+    line.classList.add(`menu-button-line`);
 
     menuBtn.append(line);
   }

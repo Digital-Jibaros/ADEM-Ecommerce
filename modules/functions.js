@@ -66,9 +66,7 @@ export function goToPage(page) {
 export function toggleNav() {
   const nav = document.querySelector('#navigation');
   const isOpen = !nav.classList.contains('nav-show');
-  const line0 = document.querySelector('.menu-button-line-0');
-  const line1 = document.querySelector('.menu-button-line-1');
-  const line2 = document.querySelector('.menu-button-line-2');
+  const line = document.querySelectorAll('.menu-button-line');
   const lineDrawMenuClosed = [
     'M 5 10 L 35 10',
     'M 5 20 L 35 20',
@@ -83,11 +81,7 @@ export function toggleNav() {
   ];
   nav.classList.toggle('nav-show');
 
-  [line0, line1, line2].forEach((line, i) => {
-    if (isOpen) {
-      line.setAttribute('d', lineDrawMenuOpen[i]);
-    } else {
-      line.setAttribute('d', lineDrawMenuClosed[i]);
-    };
+  line.forEach((line, i) => {
+    line.setAttribute('d', isOpen ? lineDrawMenuOpen[i] : lineDrawMenuClosed[i]);
   });
 }
