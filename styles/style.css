@@ -16,10 +16,12 @@ body {
   background-color: var(--color-1);
   display: flex;
   justify-content: center;
+  min-width: 400px;
 }
 
 #wrapper {
   width: 100vw;
+  min-width: 400px;
   max-width: 1440px;
   box-shadow: 0 0 50px rgba(0, 0, 0, .25);
 }

@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(0deg, rgba(31, 96, 74, 0.82), rgba(31, 96, 74, 0.82)), url(../media/images/shop/shop-banner.jpg), #D9D9D9;
-  background-size: cover;
+  background-size: auto 1440px;
   background-position: 50% 60%;
 }
 
@@ -96,9 +96,10 @@
   --card-width: 320px;
   --gap: 32px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-width), 1fr));
   margin-top: var(--gap);
   gap: var(--gap);
+  justify-items: center;
 }
 
 /* card element */
