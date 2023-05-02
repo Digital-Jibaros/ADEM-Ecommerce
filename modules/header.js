@@ -1,4 +1,5 @@
 import { goToPage, toggleNav } from "./functions.js";
+import { storedData } from "./storedData.js";
 
 const svgNs = 'http://www.w3.org/2000/svg';
 
@@ -36,6 +37,9 @@ function logo() {
 }
 
 function nav() {
+  const favAmount = storedData.getCounts().favsCount;
+  const cartAmount = storedData.getCounts().cartCount;
+
   const menu = document.createElement('nav');
 
   const sections = document.createElement('ul');
@@ -63,10 +67,10 @@ function nav() {
   search.classList.add('nav-icon', 'nav-search');
   favorites.classList.add('nav-icon', 'nav-favorites');
   favoritesCount.classList.add('nav-favorites-count');
-  favoritesCount.textContent = 0;
+  favoritesCount.textContent = favAmount;
   cart.classList.add('nav-icon', 'nav-cart');
   cartCount.classList.add('nav-cart-count');
-  cartCount.textContent = 0;
+  cartCount.textContent = cartAmount;
   user.classList.add('nav-icon', 'nav-user');
   
   menu.setAttribute('id', 'navigation');
