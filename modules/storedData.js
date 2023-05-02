@@ -15,10 +15,12 @@ export const storedData = (() => {
   function getCounts() {
     let cartCount = 0;
     let favsCount = 0;
+
     for (const item in storedCart) {
       cartCount += storedCart[item];
     }
-    favsCount = storedFavs.reduce((curr, next) => curr + next);
+
+    favsCount = storedFavs.length > 0 ? storedFavs.reduce((curr, next) => curr + next) : 0;
 
     return {
       cartCount,
