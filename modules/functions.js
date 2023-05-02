@@ -1,10 +1,11 @@
 import home from "./pages/home.js";
 import shop from "./pages/shop.js";
+import { storedData } from "./storedData.js";
 
 export function addToCart() {
   const thisCard = this.closest('.shop-card');
   const thisCardMainBtn = thisCard.querySelector('.shop-card-buy');
-  const itemId = thisCard.dataset.itemId;
+  const itemId = parseInt(thisCard.dataset.itemId);
   const cart = document.querySelector('.nav-cart');
   const cartCount = document.querySelector('.nav-cart-count');
   
@@ -28,12 +29,21 @@ export function addToCart() {
     thisCardMainBtn.textContent = `${newAmount} Item${newAmount > 1 ? 's' : ''} added`;
     thisCardMainBtn.setAttribute('disabled', true);
   }
+
+  if (newAmount > amount) {
+    storedData.addToCart(itemId);
+  } else {
+    storedData.removeFromCart(itemId);
+  }
 }
 
 export function toggleFavorite() {
   const favIcon = document.querySelector('.nav-favorites');
   const favCount = document.querySelector('.nav-favorites-count');
-  const addSubstract = this.checked ? 1 : -1;
+  const thisCard = this.closest('.shop-card');
+  const itemId = parseInt(thisCard.dataset.itemId);
+  const isChecked = this.checked;
+  const addSubstract = isChecked ? 1 : -1;
   
   favCount.textContent = parseInt(favCount.textContent) + addSubstract;
 
@@ -43,6 +53,12 @@ export function toggleFavorite() {
   } else {
     favIcon.classList.add('has-content');
   };
+
+  if (isChecked) {
+    storedData.addFav(itemId);
+  } else {
+    storedData.removeFav(itemId);
+  }
 }
 
 export function goToPage(page) {
