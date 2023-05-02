@@ -1,6 +1,8 @@
 import { addToCart, toggleFavorite } from "./functions.js";
+import { storedData } from "./storedData.js";
 
-export default function shopCard(id, imgUrl, category, name, price, amount = 0){
+export default function shopCard(id, imgUrl, category, name, price){
+  const amount = storedData.amountInCart(id);
   const card = document.createElement('div');
   const img = document.createElement('div');
   const imgHover = document.createElement('div');
@@ -19,6 +21,7 @@ export default function shopCard(id, imgUrl, category, name, price, amount = 0){
   namePara.textContent = name;
   pricePara.textContent = `$${parseFloat(price).toFixed(2)}`;
   favCheckbox.setAttribute('type', 'checkbox');
+  if (storedData.isFav(id)) favCheckbox.setAttribute('checked', true);
   btn.textContent = amount === 0 ? 'Add to Cart'
     : `${amount} Item${amount > 1 ? 's' : ''} added`;
   btnRemove.textContent = '-';
