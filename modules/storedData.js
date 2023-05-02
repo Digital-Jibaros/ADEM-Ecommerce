@@ -20,7 +20,7 @@ export const storedData = (() => {
       cartCount += storedCart[item];
     }
 
-    favsCount = storedFavs.length > 0 ? storedFavs.reduce((curr, next) => curr + next) : 0;
+    favsCount = storedFavs.length;
 
     return {
       cartCount,
