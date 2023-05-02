@@ -65,10 +65,10 @@ function nav() {
   shop.textContent = 'Shop';
 
   search.classList.add('nav-icon', 'nav-search');
-  favorites.classList.add('nav-icon', 'nav-favorites');
+  favorites.classList.add('nav-icon', 'nav-favorites', favAmount && 'has-content');
   favoritesCount.classList.add('nav-favorites-count');
   favoritesCount.textContent = favAmount;
-  cart.classList.add('nav-icon', 'nav-cart');
+  cart.classList.add('nav-icon', 'nav-cart', cartAmount && 'has-content');
   cartCount.classList.add('nav-cart-count');
   cartCount.textContent = cartAmount;
   user.classList.add('nav-icon', 'nav-user');
