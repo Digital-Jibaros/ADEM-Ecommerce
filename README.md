@@ -1,5 +1,5 @@
 # How to Start?
-In the terminal enter: "python3 -m http.server 8080" ok?
+In the terminal enter: "python3 -m http.server 8080"git commit -am ""git commit -am ""
 
 # ecommerce-mockup
 This project is just for practice, a little cooperation with a UX/UI friend.
