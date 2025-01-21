@@ -1,6 +1,5 @@
 # How to Start?
 In the terminal enter: python3 -m http.server 8080
-Hahahhaha
 
 # ecommerce-mockup
 This project is just for practice, a little cooperation with a UX/UI friend.
