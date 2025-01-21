@@ -1,3 +1,7 @@
+# How to Start?
+python3 -m http.server 8080
+
+
 # ecommerce-mockup
 This project is just for practice, a little cooperation with a UX/UI friend.
 
