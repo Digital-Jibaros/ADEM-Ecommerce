@@ -1,5 +1,5 @@
 # How to Start?
-python3 -m http.server 8080
+In the terminal enter: python3 -m http.server 8080
 
 
 # ecommerce-mockup
